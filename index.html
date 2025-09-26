@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Personal Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./src/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">John Doe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center text-white">
+                    <h1 class="display-4 mb-3 fade-in">John Doe</h1>
+                    <p class="lead mb-4 fade-in">Full Stack Developer & Designer</p>
+                    <a href="#about" class="btn btn-primary btn-lg smooth-scroll fade-in">Learn More About Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-5">About Me</h2>
+                    <div class="row">
+                        <div class="col-md-4 text-center mb-4">
+                            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" 
+                                 class="rounded-circle img-fluid profile-img" alt="John Doe">
+                        </div>
+                        <div class="col-md-8">
+                            <h4>Hello! I'm John Doe</h4>
+                            <p class="lead">A passionate full-stack developer with 5+ years of experience in creating beautiful, functional web applications.</p>
+                            <p>My journey began in college where I discovered my love for coding. Since then, I've worked with various technologies including React, Node.js, Python, and modern design frameworks. I specialize in creating user-centered designs and robust backend systems.</p>
+                            <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor photography.</p>
+                            
+                            <div class="skills mt-4">
+                                <h5>Core Skills:</h5>
+                                <div class="skill-tags">
+                                    <span class="badge bg-primary me-2 mb-2">JavaScript</span>
+                                    <span class="badge bg-primary me-2 mb-2">React</span>
+                                    <span class="badge bg-primary me-2 mb-2">Node.js</span>
+                                    <span class="badge bg-primary me-2 mb-2">Python</span>
+                                    <span class="badge bg-primary me-2 mb-2">HTML/CSS</span>
+                                    <span class="badge bg-primary me-2 mb-2">UI/UX Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Portfolio Gallery</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="text-center mb-4">
+                <button class="btn btn-outline-primary me-2 filter-btn active" data-filter="all">All</button>
+                <button class="btn btn-outline-primary me-2 filter-btn" data-filter="web-design">Web Design</button>
+                <button class="btn btn-outline-primary me-2 filter-btn" data-filter="graphic-design">Graphic Design</button>
+                <button class="btn btn-outline-primary me-2 filter-btn" data-filter="development">Development</button>
+            </div>
+
+            <div class="row" id="portfolio-grid">
+                <!-- Web Design Projects -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="web-design">
+                    <div class="card portfolio-card h-100">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+                             class="card-img-top" alt="E-commerce Website">
+                        <div class="card-body">
+                            <h5 class="card-title">E-commerce Website</h5>
+                            <p class="card-text">Modern e-commerce platform with responsive design and user-friendly interface.</p>
+                            <span class="badge bg-secondary">Web Design</span>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal" 
+                                    data-title="E-commerce Website" data-description="A comprehensive e-commerce solution built with modern web technologies.">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="web-design">
+                    <div class="card portfolio-card h-100">
+                        <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+                             class="card-img-top" alt="Corporate Website">
+                        <div class="card-body">
+                            <h5 class="card-title">Corporate Website</h5>
+                            <p class="card-text">Professional corporate website with clean design and optimal performance.</p>
+                            <span class="badge bg-secondary">Web Design</span>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal" 
+                                    data-title="Corporate Website" data-description="A sleek corporate website showcasing company services and values.">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graphic Design Projects -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="graphic-design">
+                    <div class="card portfolio-card h-100">
+                        <img src="https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+                             class="card-img-top" alt="Brand Identity">
+                        <div class="card-body">
+                            <h5 class="card-title">Brand Identity Design</h5>
+                            <p class="card-text">Complete brand identity package including logo, business cards, and style guide.</p>
+                            <span class="badge bg-info">Graphic Design</span>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal" 
+                                    data-title="Brand Identity Design" data-description="Comprehensive brand identity solution for a tech startup.">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="graphic-design">
+                    <div class="card portfolio-card h-100">
+                        <img src="https://images.pexels.com/photos/196666/pexels-photo-196666.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+                             class="card-img-top" alt="Marketing Materials">
+                        <div class="card-body">
+                            <h5 class="card-title">Marketing Materials</h5>
+                            <p class="card-text">Print and digital marketing materials including brochures and social media graphics.</p>
+                            <span class="badge bg-info">Graphic Design</span>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal" 
+                                    data-title="Marketing Materials" data-description="Creative marketing collateral for various campaigns and events.">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Development Projects -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="development">
+                    <div class="card portfolio-card h-100">
+                        <img src="https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+                             class="card-img-top" alt="Web Application">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Management App</h5>
+                            <p class="card-text">Full-stack web application for project and task management with real-time updates.</p>
+                            <span class="badge bg-success">Development</span>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal" 
+                                    data-title="Task Management App" data-description="React-based task management application with Node.js backend.">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="development">
+                    <div class="card portfolio-card h-100">
+                        <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+                             class="card-img-top" alt="Mobile App">
+                        <div class="card-body">
+                            <h5 class="card-title">Mobile App Development</h5>
+                            <p class="card-text">Cross-platform mobile application with modern UI and seamless user experience.</p>
+                            <span class="badge bg-success">Development</span>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal" 
+                                    data-title="Mobile App Development" data-description="React Native mobile app with advanced features and smooth performance.">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-5">Get In Touch</h2>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form id="contactForm" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name *</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your name.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid email address.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message *</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Please provide a message.
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </form>
+                            <div id="form-messages" class="mt-3"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-info">
+                                <h5>Contact Information</h5>
+                                <p><i class="fas fa-envelope me-2"></i> john.doe@example.com</p>
+                                <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                                <p><i class="fas fa-map-marker-alt me-2"></i> New York, NY</p>
+                                
+                                <div class="social-links mt-4">
+                                    <h6>Follow Me</h6>
+                                    <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 John Doe. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal-body-content">
+                    <!-- Dynamic content will be inserted here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./src/script.js"></script>
+</body>
+</html>
